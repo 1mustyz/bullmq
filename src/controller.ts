@@ -25,7 +25,7 @@ export const bulkArrayWithoutWorker = async (req:Request, res:Response) => {
 export const processJob = async (job: any) => {
     // Simulate some processing time
     await new Promise(resolve => setTimeout(resolve, 5000));
-    throw new Error('Something went wrong')
+    // throw new Error('Something went wrong')
     // Process the job data
     console.log(`Processing job ${job.id}: ${job.data.message}`);
   }
